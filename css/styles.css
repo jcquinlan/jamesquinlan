@@ -7,6 +7,14 @@
 
  @import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
 
+/* Selection */
+::selection {
+  background: #AB1A25; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #AB1A25; /* Gecko Browsers */
+}
+
 /* General */
 ul {
     list-style-type: none;
@@ -52,6 +60,7 @@ body {
   margin-left: 5px;
   margin-top: -5px;
 }
+
 
 /* Section Formatting */
 .section-title {
@@ -160,6 +169,8 @@ body {
 /*Work*/
 #work {
   color: #002635;
+  padding-bottom: 50px;
+  border-bottom: 4px solid #AB1A25;
 }
 .work-item {
   margin-bottom: 150px;
@@ -175,4 +186,43 @@ body {
 .work-item-content {
   font-size: 16px;
   line-height: 30px;
+}
+
+/*Resume*/
+#resume {
+  background-color: #002635;
+  color: #EFE7BE;
+  border-bottom: 4px solid #AB1A25;
+  padding-bottom: 80px;
+}
+#resume .button {
+  margin-top: 0;
+}
+#resume .col-md-2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 50px;
+}
+#resume .button {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+#resume .button:hover {
+  background-color: #EFE7BE;
+  color: #002635;
+}
+
+/*Footer*/
+#footer {
+  background-color: #AB1A25;
+  color: #EFE7BE;
+}
+#footer img {
+  margin-right: 10px;
+  padding: 10px 0px;
+}
+#footer p {
+  display: block;
 }
