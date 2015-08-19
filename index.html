@@ -11,6 +11,7 @@ open to learning new workflows. -->
   <title>James Quinlan</title>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--LOAD jQUERY-->
 </head>
 
@@ -36,13 +37,20 @@ open to learning new workflows. -->
 
 <div id="about">
   <div class="container">
-      <h2 class="section-title">about me <img src="images/tools.png" alt="Tools" class="icon"></h2>
+    <div class="row">
+      <h2 class="section-title">about me <img src="images/Tools.png" alt="Tools" class="icon"></h2>
+    </div>
       <p class="section-content">I've been learning web design and development for
       the last few years after being inspired by experiences with Processing and Java. I wanted to write code
       but I also needed a suitable medium through which to share what I've written. Since learning to design and develop
       the web on my time and through classes, I've taken numerous jobs as a freelancer, worked at a small design studio creating responsive sites for a variety
       of clients, designed an Android app, and have even begun learning application frameworks like Meteor and AngularJS. I pride
-      myself in being an autodidact, and finding time to learn more about web development while maintaining a healthy art practice. </p>
+      myself in being an autodidact, and finding time to learn more about web development while maintaining a healthy art practice.
+      <br />
+      <br />
+      What I look forward to most in my design career is working with a small, dedicated team of designers and developers to tackle a diverse range of design challenges, ranging from websites to apps, and beyond. I find
+      that I work excellently in a team environment, and with a small team I am afforded more time to ensure things like cross-browser
+      compatability, effecient load times, and superb accessibility.</p>
       <div class="row" id="skills">
         <div class="col-lg-4">
           <h3>How I Code</h3>
@@ -77,19 +85,20 @@ open to learning new workflows. -->
 
   <div id="work">
     <div class="container">
-      <h2 class="section-title">my work <img src="images/Code Window.png" alt="Desktop" class="icon"></h2>
-
+      <div class="row">
+        <h2 class="section-title">my work <img src="images/Code-Window.png" alt="Desktop" class="icon"></h2>
+      </div>
       <div class="row">
         <div class="work-item">
           <div class="col-lg-8">
             <h3 class="work-item-title">First Steps Physical Therapy</h3>
             <p class="work-item-content">I built this website for a local physical therapist that focuses on treating
             children. I wanted to keep a light and playful atmosphere in order to accentuate the caring and safe nature
-          of the office, but I also needed to cater to the professional side of the practice. The site is fully responsive,
-        as I used a custom export of bootstrap for the grid system. I also took all the photographs used on the site.</p>
+            of the office, but I also needed to cater to the professional side of the practice. The site is fully responsive,
+            as I used a custom export of bootstrap for the grid system. I also took all the photographs used on the site.</p>
           </div>
           <div class="col-lg-4">
-            <a href="http://www.firststepspt.com" target="_blank"><div class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></div></a>
+            <a href="http://www.firststepspt.com" target="_blank" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
       </div><!--END ROW-->
@@ -104,7 +113,7 @@ open to learning new workflows. -->
             custom Javascript used in various parts of the website.</p>
           </div>
           <div class="col-lg-4">
-            <a href="http://www.llbco.com" target="_blank"><div class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></div></a>
+            <a href="http://www.llbco.com" target="_blank"class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
       </div>
@@ -119,7 +128,7 @@ open to learning new workflows. -->
           the absolute minimum needed to build the site.</p>
           </div>
           <div class="col-lg-4">
-            <a href="http://www.mcbrick.com" target="_blank"><div class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></div></a>
+            <a href="http://www.mcbrick.com" target="_blank"class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
       </div>
@@ -134,7 +143,7 @@ open to learning new workflows. -->
           flocking as a mechanism to create a more relatable or organic dynamic between the player and the "character".</p>
           </div>
           <div class="col-lg-4">
-            <a href="murmur.html"><div class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></div></a>
+            <a href="murmur.html" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
       </div>
@@ -148,11 +157,11 @@ open to learning new workflows. -->
       </div><!--END ROW-->
       <div class="row">
         <div class="col-md-5">
-          <div class="button">View my Resume</div>
+          <a href="pdf.html" target="_blank" class="button">View my Resume</a>
         </div>
         <div class="col-md-2">- OR -</div>
         <div class="col-md-5">
-          <div class="button">Download It</div>
+          <form method="get" action="pdf/Resume-Web.pdf" class="disable-button">Download It</form>
         </div>
       </div>
     </div><!--END CONTAINER-->
@@ -161,11 +170,10 @@ open to learning new workflows. -->
   <div id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <img src="images/social/instagram42.png" alt="">
-          <img src="images/social/github42.png" alt="">
+        <div class="col-md-12">
+          <a href="http://www.instagram.com/jcquinlan" target="_blank"><img src="images/social/instagram42.png" alt=""></a>
+          <a href="http://www.github.com/jcquinlan" target="_blank"><img src="images/social/github42.png" alt=""></a>
         </div>
-        <div class="col-md-4">Back to Top</div>
       </div>
     </div>
   </div>

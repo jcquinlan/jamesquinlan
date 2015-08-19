@@ -23,7 +23,7 @@ ul {
 a {
   color: #002635;
 }
-a:hover {
+a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #002635;
 }
@@ -34,6 +34,7 @@ body {
 }
 .button {
   position: relative;
+  display: block;
   width: 160px;
   height: 60px;
   border: 2px solid #AB1A25;
@@ -60,6 +61,19 @@ body {
   margin-left: 5px;
   margin-top: -5px;
 }
+.disable-button{
+  position: relative;
+  width: 160px;
+  height: 60px;
+  border: 2px solid #AB1A25;
+  background-color: grey;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 16px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
 
 
 /* Section Formatting */
@@ -67,13 +81,15 @@ body {
   text-align: center;
   font-size: 50px;
   font-weight: 300;
+  margin-top: 30px;;
+  margin-bottom: 30px;
 }
 
 .section-content {
   font-size: 20px;
   font-weight: 300;
   line-height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* Splash Page */
@@ -101,11 +117,11 @@ body {
     font-weight: lighter;
 }
 #splash #places {
-  font-size: 150%;
-  padding: 0;
+    font-size: 150%;
+    padding: 0;
 }
 #splash #places ul {
-  display: inline-block;
+    display: inline-block;
     padding: 10px 0 0 10px;
     line-height: 38px;
 }
@@ -136,6 +152,7 @@ body {
 }
 #about .section-content {
   color: #EFE7BE;
+  margin-bottom: 30px;
 }
 
 /*Skills*/
@@ -147,6 +164,7 @@ body {
 }
 #skills h3 {
   text-align: center;
+  margin-top: 30px;
   color: #EFE7BE;
   font-size: 18px;
   font-weight: 700;
@@ -184,7 +202,7 @@ body {
   border-bottom: 2px solid #AB1A25;
 }
 .work-item-content {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -194,6 +212,9 @@ body {
   color: #EFE7BE;
   border-bottom: 4px solid #AB1A25;
   padding-bottom: 80px;
+}
+#resume a {
+  color: #EFE7BE;
 }
 #resume .button {
   margin-top: 0;
@@ -212,6 +233,28 @@ body {
 #resume .button:hover {
   background-color: #EFE7BE;
   color: #002635;
+}
+
+/*Murmur*/
+#murmur {
+    margin-bottom: 50px;
+}
+#murmur h1 {
+  font-weight: 300;
+  font-size: 50px;
+}
+#murmur .col-md-2 {
+  padding: 30px 0;
+}
+#murmur p {
+  font-size: 20px;
+}
+#murmur img {
+  padding-top: 30px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /*Footer*/

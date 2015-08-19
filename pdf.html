@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- I like to keep a pretty neat codebase, and do my best to ensure
+I use semantically natural class and id names. Take a look at the code
+to see what I'm used to building, and keep in mind that I'm always
+open to learning new workflows. -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>James Quinlan | Resume</title>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--LOAD jQUERY-->
+</head>
+
+<body>
+  <object data="pdf/Resume-Web.pdf" type="application/pdf" width="100%" height="700px">
+      <embed src="pdf/Resume-Web.pdf" type="application/pdf" />
+  </object>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+              }, 500);
+              return false;
+          }
+      }
+  });
+</script><!--SMOOTH SCROLL-->
+</body>
+</html>
