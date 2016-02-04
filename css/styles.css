@@ -235,26 +235,9 @@ body {
   color: #002635;
 }
 
-/*Murmur*/
-#murmur {
-    margin-bottom: 50px;
-}
-#murmur h1 {
-  font-weight: 300;
-  font-size: 50px;
-}
-#murmur .col-md-2 {
-  padding: 30px 0;
-}
-#murmur p {
-  font-size: 20px;
-}
-#murmur img {
-  padding-top: 30px;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
+/*PDF*/
+object {
+    height: 1500px;
 }
 
 /*Footer*/
