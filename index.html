@@ -8,6 +8,7 @@ open to learning new workflows. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>James Quinlan</title>
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -19,11 +20,11 @@ open to learning new workflows. -->
   <div id="splash">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-6" id="name">
+        <div class="col-sm-6" id="name">
           <h1>james quinlan </h1>
           <h3>web developer </h3>
         </div><!--END NAME-->
-        <div class="col-lg-6" id="places">
+        <div class="col-sm-6" id="places">
           <ul>
             <li><a href="#about">/ about me</a></li>
             <li><a href="#work">/ work</a></li>
@@ -42,15 +43,15 @@ open to learning new workflows. -->
       <p class="section-content">I've been learning web development for
       the last few years after being inspired by experiences with Processing and Java. I wanted to write code
       but I also needed a suitable medium through which to share what I've written. Since learning to design and develop
-      the web on my own time and through classes, I've taken numerous jobs as a freelancer, worked at a small design studio creating responsive sites for a variety
-      of clients, experimented with tools like Ionic, Cordova to create native apps, and have begun creating web applications with Meteor. I pride
-      myself in being an autodidact, and enjoy playing with new technologies like VR, or learning new tools to develop with, like Python.
+      the web on my own time and through classes, I've taken jobs as a freelancer, worked at a small design studio creating responsive sites for a variety
+      of clients, experimented with tools like Ionic and Cordova to create native apps, and now I create large web applications with Meteor. I pride
+      myself in being an autodidact, and I enjoy playing with new technologies like VR, or learning new tools to develop with, like Python and Django.
       <br />
       <br />
       What I look forward to most in my development career is working with a small, dedicated team to tackle a diverse range of challenges, ranging from websites to apps, and beyond. I find
       that I work excellently in a team environment, because I am afforded more time to ensure that what we create is the absolute best it can be.</p>
       <div class="row" id="skills">
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h3>How I Code</h3>
           <ul>
             <li>JavaScript</li>
@@ -58,8 +59,8 @@ open to learning new workflows. -->
             <li>CSS3</li>
           </ul>
         </div>
-        <div class="col-lg-4">
-          <h3>What I Use</h3>
+        <div class="col-md-4">
+          <h3>Tools I Use</h3>
           <ul>
             <li>Atom</li>
 	        <li>Gulp</li>
@@ -67,13 +68,13 @@ open to learning new workflows. -->
 	        <li>Vim</li>
           </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h3>What I'm Learning</h3>
           <ul>
             <li>Python & Django</li>
             <li>Unity</li>
           </ul>
-        </div>
+        </div><!--END COL-->
       </div><!--END ROW-->
     </div><!--END CONTAINER-->
   </div><!--END ABOUT-->
@@ -86,55 +87,65 @@ open to learning new workflows. -->
 
       <div class="row">
 	    <div class="work-item">
-          <div class="col-lg-8">
+          <div class="col-md-12">
             <h3 class="work-item-title">Unify</h3>
-            <p class="work-item-content">This is my first large scale web application built on Meteor aimed at improving the lives of foster youth. I worked on both the front and back ends, and have been the primary developer on the project since I started it. My team and I hope that this tool will strengthen the support network of any foster youth using it by creating opportunities for foster youth and supportive adults to work together to achieve goals necessary for transition out of the system and into independent, adult life.</p>
-            <p>Due to the competitive nature of the service, I am unable to show the app so far, but I'd love to discuss the process so far.</p>
+            <p class="work-item-content">This is my first large scale web application built on Meteor aimed at improving the lives of foster youth by encouraging communication and cooperation between the youth and adults. I worked on both the front and back ends, and have been the primary developer on the project since I started it. This application has garnered national interest, and we are in the process of organizing the first pilot tests in several states.</p>
+            <p>Due to the competitive nature of the service, and it being in alpha, I am unable to show the app in full, but I'd love to discuss the process of creating it so far, and give a demonstration of what we are doing.</p>
           </div>
         </div><!--END WORK ITEM-->
       </div><!--END ROW-->
 
+
       <div class="row">
         <div class="work-item">
-          <div class="col-lg-8">
-            <h3 class="work-item-title">Doylestown Bike Works</h3>
-            <p class="work-item-content">I helped to build this website for a local bike shop. The designer and I decided to implement a new mobile navigation as a fixed footer which afforded easier navigation through the website without hindering the user.</p>
+          <div class="col-md-8">
+            <h3 class="work-item-title">Namesake Refactor</h3>
+            <p class="work-item-content">This is a simple SPA I created to practice my vanilla JS, as well as learn about Object Literal Architecture. <a href="https://github.com/jcquinlan/dnd-name-refactor/blob/master/app.js" target="_blank">Checkout the code on GitHub</a> to see how I refactored to keep global space nice and neat to avoid state leaks.</p>
           </div>
-          <div class="col-lg-4">
-            <a href="http://www.mcbrick.com" target="_blank"class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
+          <div class="col-md-4">
+            <a href="http://quinlanjc.webfactional.com/" target="_blank" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
+          </div>
+        </div><!--END WORK ITEM-->
+      </div><!--End Row-->
+
+
+      <div class="row">
+        <div class="work-item">
+          <div class="col-md-8">
+            <h3 class="work-item-title">Doylestown Bike Works</h3>
+            <p class="work-item-content">I helped to build this website for a local bike shop. We went through several versions of each page to find layouts that afforded the most visibility for all the critical services of the shop.</p>
+          </div>
+          <div class="col-md-4">
+            <a href="http://www.doylestownbikeworks.com" target="_blank" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
       </div><!--End Row-->
 
       <div class="row">
         <div class="work-item">
-          <div class="col-lg-8">
-            <h3 class="work-item-title">First Steps Physical Therapy</h3>
-            <p class="work-item-content">I built this website for a local physical therapist that focuses on treating
-            children. I wanted to keep a light and playful atmosphere in order to accentuate the caring and safe nature
-            of the office, but I also needed to cater to the professional side of the practice. The site is fully responsive,
-            as I used a custom export of bootstrap for the grid system. I also took all the photographs used on the site.</p>
-          </div>
-          <div class="col-lg-4">
-            <a href="http://www.firststepspt.com" target="_blank" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
-          </div>
-        </div><!--END WORK ITEM-->
-      </div><!--END ROW-->
-
-
-      <div class="row">
-        <div class="work-item">
-          <div class="col-lg-8">
+          <div class="col-md-8">
             <h3 class="work-item-title">LLB Point-of-Purchase Displays</h3>
-            <p class="work-item-content">I built this fixed-width site while working at Mind Your Design, a design firm in my
-            hometown of Doylestown. The client requested an unresponsive website, so I worked using simple HTML and CSS
-            to render the mockups I was provided by my supervisor. An independent developer was hired to create the
-            custom Javascript used in various parts of the website.</p>
+            <p class="work-item-content">This was the first website I created at Mind Your Design. The client requested an unresponsive website, so I worked using simple HTML and CSS
+            to render the mockups I was provided by my supervisor.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <a href="http://www.llbco.com" target="_blank"class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
           </div>
         </div><!--END WORK ITEM-->
+    </div><!--END ROW-->
+
+    <div class="row">
+      <div class="work-item">
+        <div class="col-md-8">
+          <h3 class="work-item-title">First Steps Physical Therapy</h3>
+          <p class="work-item-content">This was the first website I was paid to create. I wanted to keep a light and playful atmosphere in order to accentuate the caring and safe nature
+          of the office, but I also needed to cater to the professional side of the practice. The site is fully responsive,
+          as I used a custom export of bootstrap for the grid system. I also took all the photographs used on the site.</p>
+        </div>
+        <div class="col-md-4">
+          <a href="http://www.firststepspt.com" target="_blank" class="button">View Project <img src="images/Eye.png" alt="Eye" class="small-icon"></a>
+        </div>
+      </div><!--END WORK ITEM-->
     </div><!--END ROW-->
 
     </div><!--END CONTAINER-->
